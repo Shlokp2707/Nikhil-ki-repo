@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Home Ear Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen p-6">
+
+  <!-- Welcome Message (ONLY HERE) -->
+  <p class="text-lg font-semibold mb-4">
+    Welcome, {{name}}</span> 👋
+  </p>
+
+  <!-- Header -->
+  <h1 class="text-3xl font-bold text-center mb-4">
+    🔊 Smart Home Ear Dashboard
+  </h1>
+
+  <!-- Controls -->
+  <form action=""method ="POST">
+    {% csrf_token %}
+  <div class="flex justify-center items-center gap-4 mb-6">
+    <button type ="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold">
+      ▶ Start Listening
+    </button>
+</form>
+    <input type="file" accept="audio/*"
+      class="text-sm text-gray-600
+             file:mr-4 file:py-2 file:px-4
+             file:rounded-lg file:border-0
+             file:bg-gray-200">
+  </div>
+
+  <!-- Status Card -->
+  <div class="max-w-3xl mx-auto mb-6">
+    <div class="bg-red-100 border-l-8 border-red-500 p-6 rounded-lg">
+      <h2 class="text-xl font-semibold">
+        System Status:
+        <span class="text-red-700 font-bold">DANGER</span>
+      </h2>
+      <p class="text-gray-700 mt-1">
+        Critical sound detected – immediate attention required
+      </p>
+    </div>
+  </div>
+
+  <!-- Script MUST be at bottom -->
+  <script>
+    const user = localStorage.getItem("smartHomeUser");
+    document.getElementById("userName").innerText = user || "User";
+  </script>
+
+</body>
+</html>
