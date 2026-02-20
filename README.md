@@ -60,20 +60,6 @@ Depends on microphone quality
 
 👨‍💻 Author
 
-Kalash
-B.Tech CSE | Machine Learning Enthusiast
-
-If you want, I can now:
-
-Add clean GitHub badges
-
-Make it more recruiter-impressive
-
-Or create a minimal professional banner image
-
-Just tell me 👍
-👨‍💻 Author
-
 Shlok Pandey
 B.Tech CSE | ML & AI Enthusiast |Full-Stack Developer
-Passionate about building real-world AI systems.
+Passionate about building unique real-world AI systems.
